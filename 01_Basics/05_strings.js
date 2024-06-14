@@ -1,6 +1,6 @@
 const name="abc"
 const repoCount=4
-console.log(`My name is ${name} and my repo count is ${repoCount}`); // My name is abc and my repo count is $4
+console.log(`My name is ${name} and my repo count is ${repoCount}`); //This also known as String Interpolation// My name is abc and my repo count is $4
 
 const gameName = new String("Tessa")
 
