@@ -54,11 +54,41 @@ const users = [
         age:18
     }
 ]
-console.log(users[1].id); //123
+// console.log(users[1].id); //123
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser)); //[ 'id', 'name', 'isLoggedIn' ] // Returns the names of the enumerable string properties and methods of an object.
-console.log(Object.values(tinderUser)); //[ '001', 'Sam', false ] //Returns an array of values of the enumerable properties of an object
-console.log(Object.entries(tinderUser));//[ [ 'id', '001' ], [ 'name', 'Sam' ], [ 'isLoggedIn', false ] ] //Returns an array of key/values of the enumerable properties of an object
-console.log(Object.hasOwnProperty('isLogged')); //false
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser)); //[ 'id', 'name', 'isLoggedIn' ] // Returns the names of the enumerable string properties and methods of an object.
+// console.log(Object.values(tinderUser)); //[ '001', 'Sam', false ] //Returns an array of values of the enumerable properties of an object
+// console.log(Object.entries(tinderUser));//[ [ 'id', '001' ], [ 'name', 'Sam' ], [ 'isLoggedIn', false ] ] //Returns an array of key/values of the enumerable properties of an object
+// console.log(Object.hasOwnProperty('isLogged')); //false
 //Determines whether an object has a property with the specified name
+
+// ***************************************************
+
+//Object destructuring
+const course = {
+    coursename:"Javascript",
+    price:"999",
+    courseInstructor:"Alakh"
+}
+console.log(course.courseInstructor); // usual way of accessing the object
+const {courseInstructor} = course
+console.log(courseInstructor);//Accessing the object by destructuring it
+
+// calling API and representing it in Json format 
+//Json is object without name
+// {
+//     "name"="Abhay",
+//     "coursename" = "Javascript",
+//     "price" = "free" 
+
+// }
+//here key must be also written in string format
+
+//it can also come in array format
+//Example
+// [
+//     {},
+//     {},
+//     {}
+// ]
