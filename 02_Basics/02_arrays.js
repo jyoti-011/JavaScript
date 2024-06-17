@@ -8,7 +8,7 @@ const dc = ["superman", "flash", "batman"]
 let heroes = marvel.concat(dc) //Combines two or more arrays. This method returns a new array without modifying any existing arrays.
 // console.log(heroes); //[ 'thor', 'ironman', 'spiderman', 'superman', 'flash', 'batman' ]
 
-//SPREAD METHOD
+//SPREAD OPERATOR METHOD
 const allHeroes = [...marvel,...dc]
 // console.log(allHeroes);//[ 'thor', 'ironman', 'spiderman', 'superman', 'flash', 'batman' ]
 
