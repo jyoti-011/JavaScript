@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Asynchronous in Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // const start = document.querySelector("#start")
+    // const startInterval = start.addEventListener('click',function(){
+    //     setInterval(function(){
+    //         console.log('hi jyoti')
+    //     },1000)
+    // })
+
+    // const stop = document.querySelector("#stop")
+    // const stopInterval = stop.addEventListener('click',function(){
+    //     clearInterval(startInterval())
+    //     console.log('stopped');
+    // })
+
+    const msg = function(){
+    console.log("hi jyoti");
+}
+
+let start; // Declare start variable in the outer scope
+
+document.querySelector("#start").addEventListener('click', function(){
+    start = setInterval(msg, 1000);
+});
+
+document.querySelector("#stop").addEventListener('click', function(){
+    clearInterval(start);
+});
+
+ 
+</script>
+</html>
